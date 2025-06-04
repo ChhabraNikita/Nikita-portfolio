@@ -1,79 +1,134 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nikita Chhabra - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nikita Chhabra | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      padding: 40px 0;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.1rem;
+      color: #666;
+    }
+    section {
+      margin: 40px 0;
+    }
+    .section-title {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      color: #222;
+      border-left: 4px solid #6c63ff;
+      padding-left: 10px;
+    }
+    .project, .skill-bar {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .project img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+    .skill-bar span {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .bar {
+      height: 10px;
+      background-color: #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .bar-fill {
+      height: 100%;
+      background-color: #6c63ff;
+    }
+    .contact a {
+      display: inline-block;
+      margin: 5px 10px;
+      color: #6c63ff;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="contact-info" style="background: #222831; padding: 15px; border-radius: 10px; color: white; font-weight: bold; text-align: center;">
-    <p style="color: #00e1ff; font-size: 1.2em; font-weight: bold; text-shadow: 1px 1px 3px black;"> Nikita Chhabra 
+  <header>
+    <h1>Nikita Chhabra</h1>
+    <p>Creative Web & Graphic Designer | Fresher | Passionate about UI/UX</p>
+  </header>
 
-     <p style="color: #00e1ff; font-size: 1.2em; font-weight: bold; text-shadow: 1px 1px 3px black;"> Frontend Developer | Web Designer</p>
-            <p>Email: <a href="mailto:chhabranikita16@gmail.com">chhabranikita16@gmail.com</a></p>
-            
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/Nikita-Chhabra-62085524a" target="_blank">linkedin.com/in/Nikita-Chhabra</a></p>
-            
-    </header>
+  <section>
+    <h2 class="section-title">About Me</h2>
+    <p>I’m a recent Web Design graduate with strong interest in front-end development and creative design. I enjoy turning ideas into clean, responsive web and graphic designs using tools like HTML, CSS, Figma, and Canva.</p>
+  </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a Frontend Developer and Web Designer with expertise in HTML, CSS, and DHTML. 
-        I have experience working with Visual Studio and Sublime Text to create responsive websites. 
-        My background in commerce enhances my problem-solving and structured thinking in web development.</p>
-    </section>
+  <section>
+    <h2 class="section-title">Projects</h2>
+    <div class="project">
+      <h3>Personal Portfolio Website</h3>
+      <p>Created a responsive portfolio site using HTML/CSS hosted on GitHub Pages.</p>
+      <a href="https://chhabranikita.github.io/Nikita-portfolio/">View Project</a>
+    </div>
+    <div class="project">
+      <h3>Social Media Banner Set</h3>
+      <p>Designed 10+ creative banners using Canva for a fictional brand.</p>
+    </div>
+    <div class="project">
+      <h3>Figma Landing Page</h3>
+      <p>Built a modern landing page mockup using Figma with CTA and responsive layout.</p>
+    </div>
+  </section>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        
-        <div class="experience-item">
-            <h3>Octa Net Services Pvt Ltd - Intern (Oct-Nov 2024)</h3>
-            <p>Developed responsive web pages using HTML, CSS, and DHTML. 
-            Used Visual Studio for coding, debugging, and project management. 
-            Assisted in improving website layout and styling for better user experience.</p>
-        </div>
+  <section>
+    <h2 class="section-title">Skills</h2>
+    <div class="skill-bar">
+      <span>HTML/CSS</span>
+      <div class="bar"><div class="bar-fill" style="width: 90%"></div></div>
+    </div>
+    <div class="skill-bar">
+      <span>Canva</span>
+      <div class="bar"><div class="bar-fill" style="width: 85%"></div></div>
+    </div>
+    <div class="skill-bar">
+      <span>Figma</span>
+      <div class="bar"><div class="bar-fill" style="width: 70%"></div></div>
+    </div>
+    <div class="skill-bar">
+      <span>Responsive Design</span>
+      <div class="bar"><div class="bar-fill" style="width: 75%"></div></div>
+    </div>
+  </section>
 
-        <div class="experience-item">
-            <h3>PMKVY Internship (March – July 2019)</h3>
-            <p>Successfully completed National Skills Qualification Framework Level-4 training. 
-            Used Adobe tools to create 3D animations and digital content.</p>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        
-        <div class="project">
-            <h3>Responsive Web Pages (Octa Net Services Internship)</h3>
-            <p>Developed <strong>responsive web pages</strong> using <strong>HTML, CSS, and DHTML</strong>. 
-            Used <strong>Visual Studio</strong> for coding, debugging, and improving layouts.</p>
-        </div>
-
-        <div class="project">
-            <h3>3D Animation & Digital Content (PMKVY Internship)</h3>
-            <p>Created <strong>3D animations</strong> and <strong>digital content</strong> using <strong>Adobe tools</strong>. 
-            Learned <strong>multimedia design</strong> and <strong>digital content creation</strong>.</p>
-        </div>
-
-        <div class="project">
-            <h3>Personal Portfolio Website</h3>
-            <p>Built a <strong>portfolio website</strong> using <strong>HTML, CSS, and JavaScript</strong> to showcase skills.</p>
-        </div>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Frontend Development: HTML, CSS, DHTML</li>
-            <li>Development Tools: Visual Studio, Sublime Text</li>
-            <li>Programming Basics: VB.NET, Java</li>
-            <li>3D Animation & Design: Adobe Tools</li>
-            <li>MS Office Suite: Word, Excel, PowerPoint</li>
-        </ul>
-    </section>
-
-    <script src="script.js"></script>
+  <section class="contact">
+    <h2 class="section-title">Contact</h2>
+    <p>Email: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
+    <p>GitHub: <a href="https://github.com/chhabranikita">chhabranikita</a></p>
+    <p>LinkedIn: <a href="#">linkedin.com/in/nikita-chhabra</a></p>
+  </section>
 </body>
 </html>
