@@ -1,64 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nikita Chhabra - Portfolio Resume</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.6;
-      background: #f4f8fb;
-      color: #333;
-      margin: 20px;
-      padding: 0 10%;
-    }
-    h1, h2, h3 {
-      color: #2b5876;
-    }
-    .contact {
-      font-size: 0.95rem;
-      margin-bottom: 20px;
-    }
-    .section {
-      background: #ffffff;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-left: 5px solid #4a90e2;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
-    ul {
-      padding-left: 20px;
-    }
-    .section-title {
-      font-size: 1.2rem;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-    .skills-table {
-      display: flex;
-      justify-content: space-between;
-    }
-    .skills-table div {
-      width: 48%;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nikita Chhabra - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Nikita Chhabra</h1>
-  <p class="contact">
+  <header>
+    <h1>Nikita Chhabra</h1>
+   <p class="contact">
     📧 chhabranikita16@gmail.com | 📞 (+91)-7009908967 | <a href="https://www.linkedin.com/in/Nikita-Chhabra-62085524a" target="_blank">LinkedIn</a> | 🌐 <a href="https://chhabranikita.github.io/Nikita-portfolio/" target="_blank">Portfolio</a>
   </p>
+  </header>
 
-  <div class="section">
-    <div class="section-title">Profile Summary</div>
-    <p>A motivated professional with expertise in frontend development and commerce, dedicated to delivering quality results through analytical thinking and technical proficiency. Committed to continuous growth and making impactful contributions in dynamic environments.</p>
-  </div>
+  <section id="profile-summary">
+    <h2>Profile Summary</h2>
+    <p>
+      A motivated professional with expertise in frontend development and commerce, dedicated to delivering quality results through analytical thinking and technical proficiency. Committed to continuous growth and making impactful contributions in dynamic environments.
+    </p>
+  </section>
 
-  <section id="education" class="hidden-section">
-  <h2>Educational Qualifications</h2>
-  <div class="education-table">
-    <table>
+  <section id="education">
+    <h2>Educational Qualifications</h2>
+    <table class="education-table">
       <thead>
         <tr>
           <th>Institution / University</th>
@@ -94,60 +59,72 @@
         </tr>
       </tbody>
     </table>
-  </div>
-</section>
+  </section>
 
+  <section id="experience">
+    <h2>Experience</h2>
 
-  <div class="section">
-    <div class="section-title">Experience</div>
+    <h3>Multimedia & Animation Intern – PMKVY (March – July 2019)</h3>
     <ul>
-      <li><strong>Multimedia & Animation Intern – PMKVY</strong> (Mar–Jul 2019)<br>
-        Created digital content using Adobe tools and PowerPoint. Supported multimedia training initiatives using 3D tools and animation techniques.
-      </li>
-      <li><strong>Web Development Intern – Octa Net Services Pvt. Ltd.</strong> (Oct–Nov 2024)<br>
-        Developed responsive pages using HTML, CSS, DHTML; contributed to coding/debugging using Visual Studio and implemented UI features.
-      </li>
-      <li><strong>Coaching Center Coordinator – Wisdom Classes</strong> (Apr 2025)<br>
-        Managed student onboarding and app operations, coordinated test and assignment systems, and maintained smooth academic engagement.
-      </li>
+      <li>Created multimedia content using Adobe Photoshop, PowerPoint, and basic 3D animation tools to support digital projects.</li>
+      <li>Applied design principles to develop visually engaging presentations and digital assets for training and communication purposes.</li>
+      <li>Demonstrated proficiency in digital design software by delivering creative solutions within set timelines.</li>
     </ul>
-  </div>
 
-  <div class="section">
-    <div class="section-title">Extracurricular Activities</div>
+    <h3>Web Development Intern – Octa Net Services Pvt. Ltd. (October – November 2024)</h3>
     <ul>
-      <li>Merit Rank – Shri Ram Management College Olympiad (2021)</li>
-      <li>Completed training – IIT Bombay “Spoken Tutorial Project”</li>
-      <li>Workshop – Intellectual Property Rights, IPR Centre Nagpur</li>
-      <li>Volunteer – NSS (2019–2022)</li>
-      <li>Member – Rotaract Club District 3070 (2021–2022)</li>
-      <li>Student Council Member (2021–2022)</li>
+      <li>Contributed to development of responsive web pages using HTML, CSS, and DHTML, ensuring mobile and desktop compatibility.</li>
+      <li>Utilized Visual Studio for coding exercises, debugging, and project development.</li>
+      <li>Developed foundational knowledge of JavaScript to implement basic interactive features.</li>
+      <li>Engaged in hands-on frontend development tasks to create visually appealing and functional web pages optimized for multiple devices.</li>
     </ul>
-  </div>
 
-  <div class="section">
-    <div class="section-title">Skills</div>
-    <div class="skills-table">
-      <div>
-        <strong>Technical Skills:</strong>
-        <ul>
-          <li>HTML, CSS, DHTML</li>
-          <li>Visual Studio, Sublime Text</li>
-          <li>VB.NET, Java</li>
-          <li>Adobe Tools (3D Animation)</li>
-          <li>MS Word, Excel, PowerPoint</li>
-        </ul>
-      </div>
-      <div>
-        <strong>Business & Finance Skills:</strong>
-        <ul>
-          <li>Tally, Busy, QuickBooks</li>
-          <li>Financial Analysis & Reporting</li>
-          <li>Business Documentation</li>
-          <li>Data Entry & Management</li>
-        </ul>
-      </div>
-    </div>
-  </div>
+    <h3>Coaching Center Coordinator - Wisdom Classes (April 2025)</h3>
+    <ul>
+      <li>Managed student enrollment and app usage, ensuring smooth access to study materials and assignments.</li>
+      <li>Supervised test scheduling and assignment distribution to maintain academic workflow.</li>
+      <li>Provided assistance in app operations and student communication to enhance learning experience.</li>
+    </ul>
+  </section>
+
+  <section id="extracurricular">
+    <h2>Extracurricular Activities</h2>
+    <ul>
+      <li>Secured Merit Rank in “Shri Ram Management College” Olympiad organized by Marketing Society 2021.</li>
+      <li>Completed Computer Training by “IIT Bombay” for the “Spoken Tutorial Project”.</li>
+      <li>Participated in Workshop on Intellectual Property Rights and Patents organized by Rajiv Gandhi National Institute of Intellectual Property Management.</li>
+      <li>Volunteered in “National Service Scheme” (2019-2022).</li>
+      <li>Member of “Rotaract District 3070 Club” (2021-2022).</li>
+      <li>Member of Student Council (2021-2022).</li>
+    </ul>
+  </section>
+
+  <section id="technical-skills">
+    <h2>Technical Skills</h2>
+
+    <h3>Frontend Development</h3>
+    <p>HTML, CSS, DHTML</p>
+
+    <h3>Development Tools</h3>
+    <p>Visual Studio, Sublime Text</p>
+
+    <h3>Programming Basics</h3>
+    <p>VB.NET, Java</p>
+
+    <h3>Design & Animation</h3>
+    <p>Adobe Tools (for 3D Animation)</p>
+
+    <h3>Office Productivity</h3>
+    <p>Word, Excel, PowerPoint</p>
+
+    <h3>Business & Finance Skills</h3>
+    <p>
+      Accounting Software: Tally, Busy, QuickBooks<br />
+      Financial Analysis & Reports<br />
+      Business Documentation<br />
+      Data Entry & Management
+    </p>
+  </section>
+
 </body>
 </html>
