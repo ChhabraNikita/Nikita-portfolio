@@ -3,131 +3,118 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nikita Chhabra | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <title>Nikita Chhabra - Portfolio Resume</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
     body {
-      font-family: 'Montserrat', sans-serif;
-      background-color: #f4f6f8;
-      color: #333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.6;
+      background: #f4f8fb;
+      color: #333;
+      margin: 20px;
+      padding: 0 10%;
+    }
+    h1, h2, h3 {
+      color: #2b5876;
+    }
+    .contact {
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+    }
+    .section {
+      background: #ffffff;
       padding: 20px;
+      margin-bottom: 20px;
+      border-left: 5px solid #4a90e2;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
-    header {
-      text-align: center;
-      padding: 40px 0;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 1.1rem;
-      color: #666;
-    }
-    section {
-      margin: 40px 0;
+    ul {
+      padding-left: 20px;
     }
     .section-title {
-      font-size: 1.5rem;
-      margin-bottom: 20px;
-      color: #222;
-      border-left: 4px solid #6c63ff;
-      padding-left: 10px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 10px;
     }
-    .project, .skill-bar {
-      background-color: #fff;
-      border-radius: 8px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    .skills-table {
+      display: flex;
+      justify-content: space-between;
     }
-    .project img {
-      max-width: 100%;
-      height: auto;
-      margin-top: 10px;
-      border-radius: 5px;
-    }
-    .skill-bar span {
-      display: block;
-      margin-bottom: 5px;
-    }
-    .bar {
-      height: 10px;
-      background-color: #ddd;
-      border-radius: 5px;
-      overflow: hidden;
-    }
-    .bar-fill {
-      height: 100%;
-      background-color: #6c63ff;
-    }
-    .contact a {
-      display: inline-block;
-      margin: 5px 10px;
-      color: #6c63ff;
-      text-decoration: none;
+    .skills-table div {
+      width: 48%;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Nikita Chhabra</h1>
-    <p>Creative Web & Graphic Designer | Fresher | Passionate about UI/UX</p>
-  </header>
+  <h1>Nikita Chhabra</h1>
+  <p class="contact">
+    📧 Himanshukakkar67@gmail.com | 📞 (+91)-7009908967 | <a href="https://www.linkedin.com/in/Nikita-Chhabra-62085524a" target="_blank">LinkedIn</a> | 🌐 <a href="https://chhabranikita.github.io/Nikita-portfolio/" target="_blank">Portfolio</a>
+  </p>
 
-  <section>
-    <h2 class="section-title">About Me</h2>
-    <p>I’m a recent Web Design graduate with strong interest in front-end development and creative design. I enjoy turning ideas into clean, responsive web and graphic designs using tools like HTML, CSS, Figma, and Canva.</p>
-  </section>
+  <div class="section">
+    <div class="section-title">Profile Summary</div>
+    <p>A motivated professional with expertise in frontend development and commerce, dedicated to delivering quality results through analytical thinking and technical proficiency. Committed to continuous growth and making impactful contributions in dynamic environments.</p>
+  </div>
 
-  <section>
-    <h2 class="section-title">Projects</h2>
-    <div class="project">
-      <h3>Personal Portfolio Website</h3>
-      <p>Created a responsive portfolio site using HTML/CSS hosted on GitHub Pages.</p>
-      <a href="https://chhabranikita.github.io/Nikita-portfolio/">View Project</a>
-    </div>
-    <div class="project">
-      <h3>Social Media Banner Set</h3>
-      <p>Designed 10+ creative banners using Canva for a fictional brand.</p>
-    </div>
-    <div class="project">
-      <h3>Figma Landing Page</h3>
-      <p>Built a modern landing page mockup using Figma with CTA and responsive layout.</p>
-    </div>
-  </section>
+  <div class="section">
+    <div class="section-title">Educational Qualifications</div>
+    <ul>
+      <li><strong>SSSS College, Amritsar (GNDU)</strong> – Post Graduation Diploma in Web Designing (2023-2024) – 70.4%</li>
+      <li><strong>SSSS College, Amritsar (GNDU)</strong> – B.Com (Hons.) (2019-2022)</li>
+      <li><strong>Ajanta Senior Secondary School, Amritsar</strong> – Class XII (Commerce) – 69.33%</li>
+      <li><strong>PSEB</strong> – Class X – 62.7%</li>
+    </ul>
+  </div>
 
-  <section>
-    <h2 class="section-title">Skills</h2>
-    <div class="skill-bar">
-      <span>HTML/CSS</span>
-      <div class="bar"><div class="bar-fill" style="width: 90%"></div></div>
-    </div>
-    <div class="skill-bar">
-      <span>Canva</span>
-      <div class="bar"><div class="bar-fill" style="width: 85%"></div></div>
-    </div>
-    <div class="skill-bar">
-      <span>Figma</span>
-      <div class="bar"><div class="bar-fill" style="width: 70%"></div></div>
-    </div>
-    <div class="skill-bar">
-      <span>Responsive Design</span>
-      <div class="bar"><div class="bar-fill" style="width: 75%"></div></div>
-    </div>
-  </section>
+  <div class="section">
+    <div class="section-title">Experience</div>
+    <ul>
+      <li><strong>Multimedia & Animation Intern – PMKVY</strong> (Mar–Jul 2019)<br>
+        Created digital content using Adobe tools and PowerPoint. Supported multimedia training initiatives using 3D tools and animation techniques.
+      </li>
+      <li><strong>Web Development Intern – Octa Net Services Pvt. Ltd.</strong> (Oct–Nov 2024)<br>
+        Developed responsive pages using HTML, CSS, DHTML; contributed to coding/debugging using Visual Studio and implemented UI features.
+      </li>
+      <li><strong>Coaching Center Coordinator – Wisdom Classes</strong> (Apr 2025)<br>
+        Managed student onboarding and app operations, coordinated test and assignment systems, and maintained smooth academic engagement.
+      </li>
+    </ul>
+  </div>
 
-  <section class="contact">
-    <h2 class="section-title">Contact</h2>
-    <p>Email: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
-    <p>GitHub: <a href="https://github.com/chhabranikita">chhabranikita</a></p>
-    <p>LinkedIn: <a href="#">linkedin.com/in/nikita-chhabra</a></p>
-  </section>
+  <div class="section">
+    <div class="section-title">Extracurricular Activities</div>
+    <ul>
+      <li>Merit Rank – Shri Ram Management College Olympiad (2021)</li>
+      <li>Completed training – IIT Bombay “Spoken Tutorial Project”</li>
+      <li>Workshop – Intellectual Property Rights, IPR Centre Nagpur</li>
+      <li>Volunteer – NSS (2019–2022)</li>
+      <li>Member – Rotaract Club District 3070 (2021–2022)</li>
+      <li>Student Council Member (2021–2022)</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Skills</div>
+    <div class="skills-table">
+      <div>
+        <strong>Technical Skills:</strong>
+        <ul>
+          <li>HTML, CSS, DHTML</li>
+          <li>Visual Studio, Sublime Text</li>
+          <li>VB.NET, Java</li>
+          <li>Adobe Tools (3D Animation)</li>
+          <li>MS Word, Excel, PowerPoint</li>
+        </ul>
+      </div>
+      <div>
+        <strong>Business & Finance Skills:</strong>
+        <ul>
+          <li>Tally, Busy, QuickBooks</li>
+          <li>Financial Analysis & Reporting</li>
+          <li>Business Documentation</li>
+          <li>Data Entry & Management</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
