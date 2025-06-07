@@ -1,130 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nikita Chhabra Portfolio</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9ff;
-      color: #333;
-    }
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 20px;
-      background: white;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-      border-radius: 10px;
-    }
-    h1, h2, h3 {
-      color: #2c3e50;
-    }
-    a {
-      color: #0077cc;
-      text-decoration: none;
-    }
-    .section {
-      margin-bottom: 30px;
-    }
-    .info {
-      font-size: 0.95rem;
-      margin-bottom: 8px;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .skills div {
-      background: #eef1f5;
-      margin: 5px;
-      padding: 8px 12px;
-      border-radius: 20px;
-      font-size: 0.9rem;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>Nikita Chhabra</h1>
-    <p class="info">📞 +91-7009908967 | 📧 <a href="mailto:chhabranikita16@gmail.com">chhabranikita16@gmail.com</a></p>
-    <p class="info">🔗 <a href="https://www.linkedin.com/in/Nikita-Chhabra-62085524a">LinkedIn</a> | 🌐 <a href="https://chhabranikita.github.io/Nikita-portfolio/">Portfolio</a></p>
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 30px;
+  background-color: #f9faff;
+  color: #222;
+  line-height: 1.6;
+}
 
-    <div class="section">
-      <h2>Profile Summary</h2>
-      <p>A motivated professional with expertise in frontend development and commerce, dedicated to delivering quality results through analytical thinking and technical proficiency. Committed to continuous growth and making impactful contributions in dynamic environments.</p>
-    </div>
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
 
-    <div class="section">
-      <h2>Education</h2>
-      <ul>
-        <li>Post Graduation Diploma in Web Designing, SSSS College, Amritsar (GNDU), 2023-2024 — 70.4%</li>
-        <li>Bachelors of Commerce (Hons.), SSSS College, Amritsar (GNDU), 2019-2022</li>
-        <li>PSEB Class XII (Commerce), Ajanta Sr. Sec. School, Amritsar, 2019 — 69.33%</li>
-        <li>PSEB Class X, Ajanta Sr. Sec. School, Amritsar, 2017 — 62.7%</li>
-      </ul>
-    </div>
+header h1 {
+  font-size: 3em;
+  margin-bottom: 5px;
+  color: #2a6edc;
+}
 
-    <div class="section">
-      <h2>Experience</h2>
-      <ul>
-        <li><strong>Web Development Intern</strong> – Octa Net Services Pvt. Ltd. (Oct–Nov 2024)<br />
-        Built responsive websites using HTML/CSS, learned JavaScript, and worked in Visual Studio.</li>
+header p {
+  font-size: 1.1em;
+  color: #555;
+  margin: 4px 0;
+}
 
-        <li><strong>Multimedia & Animation Intern</strong> – PMKVY (Mar–Jul 2019)<br />
-        Designed 3D and multimedia assets using Adobe Photoshop and presentation tools for digital campaigns and training.</li>
+section {
+  margin-bottom: 40px;
+}
 
-        <li><strong>Coaching Center Coordinator</strong> – Wisdom Classes (Apr 2025)<br />
-        Handled student queries, app management, assignment distribution, and test coordination for coaching center operations.</li>
-      </ul>
-    </div>
+h2 {
+  border-bottom: 3px solid #2a6edc;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+  color: #2a6edc;
+  font-weight: 700;
+}
 
-    <div class="section">
-      <h2>Technical Skills</h2>
-      <div class="skills">
-        <div>HTML</div>
-        <div>CSS</div>
-        <div>DHTML</div>
-        <div>Java</div>
-        <div>VB.NET</div>
-        <div>Adobe Tools (3D)</div>
-        <div>Visual Studio</div>
-        <div>Sublime Text</div>
-        <div>Word</div>
-        <div>Excel</div>
-        <div>PowerPoint</div>
-      </div>
-    </div>
+h3 {
+  color: #444;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
 
-    <div class="section">
-      <h2>Business & Finance Skills</h2>
-      <div class="skills">
-        <div>Tally</div>
-        <div>QuickBooks</div>
-        <div>Busy</div>
-        <div>Financial Reports</div>
-        <div>Business Documentation</div>
-        <div>Data Entry</div>
-      </div>
-    </div>
+p, ul {
+  font-size: 1em;
+  color: #333;
+}
 
-    <div class="section">
-      <h2>Extracurricular Activities</h2>
-      <ul>
-        <li>Merit Rank in Shri Ram Management Olympiad 2021</li>
-        <li>IIT Bombay Spoken Tutorial Project (Computer Training)</li>
-        <li>IPR Workshop by RGNIIPM, Nagpur</li>
-        <li>National Service Scheme Volunteer (2019–2022)</li>
-        <li>Rotaract District3070 Club Member (2021–2022)</li>
-        <li>Student Council Member (2021–2022)</li>
-      </ul>
-    </div>
-  </div>
-</body>
-</html>
+ul {
+  padding-left: 20px;
+}
+
+.education-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+.education-table th,
+.education-table td {
+  border: 1px solid #444;
+  padding: 12px 20px;
+  text-align: left;
+  font-size: 1em;
+}
+
+.education-table th {
+  background-color: #2a6edc;
+  color: white;
+  font-weight: 600;
+}
+
+.education-table tr:nth-child(even) {
+  background-color: #f0f4ff;
+}
+
+.education-table tr:hover {
+  background-color: #d1d9ff;
+  transition: background-color 0.3s ease;
+}
+
+a {
+  color: #2a6edc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
