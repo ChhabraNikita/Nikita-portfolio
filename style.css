@@ -5,6 +5,7 @@ body {
   padding: 0;
   background-color: #f9f9f9;
   color: #333;
+  text-align: left; /* Left align all text */
 }
 
 a {
@@ -19,126 +20,121 @@ a:hover {
 /* Header section */
 header {
   background-color: #ffffff;
-  padding: 20px;
-  text-align: center;
-  border-bottom: 2px solid #004080; /* match name color */
+  padding: 20px 40px;
+  border-bottom: 3px solid #007BFF;
+  text-align: left; /* left align header text */
 }
 
 header h1 {
   margin: 0;
-  font-size: 2em;
-  color: #004080; /* Dark blue, bold & matching */
+  font-size: 2.5em;
   font-weight: 700;
+  color: #004080; /* Dark Blue for strong contrast */
 }
 
-header p {
-  margin-top: 10px;
-  font-size: 0.95em;
+header p.contact {
+  margin-top: 8px;
+  font-size: 1em;
+  color: #444;
 }
 
 /* Section titles */
 h2 {
-  color: #004080;
-  border-bottom: 2px solid #004080;
-  padding-bottom: 6px;
-  margin-bottom: 18px;
+  color: #004080; /* Dark Blue */
+  border-bottom: 3px solid #007BFF;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
   font-weight: 700;
+  font-size: 1.8em;
 }
 
+/* Section paragraphs & lists */
+section p,
+section ul,
+section li {
+  font-size: 1.05em;
+  line-height: 1.6;
+  color: #222;
+}
+
+/* Sections */
 section {
-  padding: 20px;
+  padding: 25px 40px;
   max-width: 900px;
-  margin: 20px auto;
+  margin: 30px auto;
   background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
 }
 
 /* Education Table */
 .edu-table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .edu-table th,
 .edu-table td {
   border: 1px solid #ccc;
-  padding: 10px;
+  padding: 12px 15px;
   text-align: left;
 }
 
 .edu-table th {
-  background-color: #f0f8ff;
+  background-color: #e6f0ff; /* light blue */
+  color: #004080;
+  font-weight: 700;
+}
+
+/* Experience and Extracurricular lists */
+#experience ul,
+#extracurricular ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+#experience li,
+#extracurricular li {
+  margin-bottom: 15px;
+  font-weight: 500;
 }
 
 /* Skills section */
 .skills-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 25px;
   margin-top: 15px;
 }
 
 .skills-box {
   flex: 1 1 45%;
   background-color: #fefefe;
-  padding: 15px;
-  border: 1px solid #e0e0e0;
-  border-radius: 12px; /* Rounded corners, not rectangle */
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  border: 1.5px solid #007BFF;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 123, 255, 0.15);
 }
 
 .skills-box h3 {
-  color: #007BFF;
-  margin-bottom: 10px;
+  color: #004080;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 1.3em;
 }
 
 .skills-box ul {
   list-style-type: square;
-  padding-left: 20px;
+  padding-left: 22px;
 }
 
 .skills-box li {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+  font-weight: 500;
 }
 
-/* Experience Section */
-#experience {
-  /* same style as other sections */
-}
-
-.experience-box {
-  border: 1px solid #e0e0e0;
-  padding: 15px;
-  border-radius: 12px;
-  margin-bottom: 15px;
-  background-color: #fefefe;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-}
-
-.experience-box h3 {
-  margin-top: 0;
-  color: #007BFF;
-}
-
-.experience-box p {
-  margin: 5px 0;
-  font-size: 0.95em;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px;
-  color: #777;
-  font-size: 0.9em;
-  background-color: #fff;
-  border-top: 1px solid #ddd;
-  margin-top: 40px;
-}
-
-/* Responsive design */
+/* Responsive */
 @media (max-width: 768px) {
   .skills-container {
     flex-direction: column;
