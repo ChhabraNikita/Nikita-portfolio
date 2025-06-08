@@ -1,146 +1,184 @@
-/* General styles */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* ======== Basic Reset & Body ======== */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
-  color: #333;
-  text-align: left; /* Left align all text */
 }
 
-a {
-  color: #007BFF;
-  text-decoration: none;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f3f6fc;
+  color: #222;
+  line-height: 1.6;
+  padding: 25px;
+  min-height: 100vh;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-/* Header section */
+/* ======== Header ======== */
 header {
-  background-color: #ffffff;
-  padding: 20px 40px;
-  border-bottom: 3px solid #007BFF;
-  text-align: left; /* left align header text */
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  background: white;
+  padding: 30px 35px;
+  border-radius: 18px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 header h1 {
-  margin: 0;
-  font-size: 2.5em;
+  font-size: 3.2rem;
+  color: #004aad;
+  font-weight: 900;
+  margin-bottom: 10px;
+  letter-spacing: 1.2px;
+}
+
+header .contact {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0066ff;
+  user-select: text;
+}
+
+header .contact a {
+  color: #004aad;
+  text-decoration: none;
   font-weight: 700;
-  color: #004080; /* Dark Blue for strong contrast */
+  margin: 0 6px;
+  transition: color 0.3s ease;
 }
 
-header p.contact {
-  margin-top: 8px;
-  font-size: 1em;
-  color: #444;
+header .contact a:hover {
+  color: #001f66;
+  text-decoration: underline;
 }
 
-/* Section titles */
-h2 {
-  color: #004080; /* Dark Blue */
-  border-bottom: 3px solid #007BFF;
-  padding-bottom: 8px;
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 1.8em;
-}
-
-/* Section paragraphs & lists */
-section p,
-section ul,
-section li {
-  font-size: 1.05em;
-  line-height: 1.6;
-  color: #222;
-}
-
-/* Sections */
+/* ======== Sections Common Style ======== */
 section {
-  padding: 25px 40px;
   max-width: 900px;
-  margin: 30px auto;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+  margin: 0 auto 40px auto;
+  background: white;
+  padding: 28px 35px;
+  border-radius: 18px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.07);
+  color: #222;
+  font-weight: 600;
+  text-align: left;
 }
 
-/* Education Table */
+section h2 {
+  font-size: 2.4rem;
+  margin-bottom: 22px;
+  font-weight: 800;
+  color: #004aad;
+  border-bottom: 3px solid #007bff;
+  padding-bottom: 6px;
+  width: fit-content;
+}
+
+/* ======== Profile Summary ======== */
+#profile-summary p {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #222;
+  max-width: 850px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* ======== Education Table ======== */
 .edu-table {
   width: 100%;
-  border-collapse: collapse;
-  margin-top: 15px;
+  border-collapse: separate;
+  border-spacing: 0 15px;
+  font-weight: 700;
 }
 
 .edu-table th,
 .edu-table td {
-  border: 1px solid #ccc;
-  padding: 12px 15px;
+  padding: 14px 18px;
   text-align: left;
+  font-weight: 600;
+  font-size: 1.05rem;
+  vertical-align: middle;
 }
 
 .edu-table th {
-  background-color: #e6f0ff; /* light blue */
-  color: #004080;
+  background-color: #e3edff;
+  color: #004aad;
+  border-radius: 12px 12px 0 0;
+  font-weight: 800;
+}
+
+.edu-table tr {
+  background: #f7faff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgb(0 75 173 / 0.1);
+}
+
+.edu-table tr td:first-child {
   font-weight: 700;
+  color: #0053bf;
 }
 
-/* Experience and Extracurricular lists */
-#experience ul,
-#extracurricular ul {
+.edu-table tr:last-child {
+  border-radius: 0 0 15px 15px;
+}
+
+.edu-table tr:hover {
+  background-color: #c6dbff;
+  cursor: default;
+}
+
+/* ======== Experience Section ======== */
+#experience {
+  font-weight: 600;
+}
+
+.exp-block {
+  margin-bottom: 28px;
+  padding-left: 18px;
+  border-left: 5px solid #007BFF;
+  transition: border-color 0.3s ease;
+}
+
+.exp-block:hover {
+  border-color: #004aad;
+}
+
+.exp-block h3 {
+  color: #004aad;
+  font-weight: 800;
+  font-size: 1.35rem;
+  margin-bottom: 4px;
+}
+
+.exp-block .date {
+  font-style: italic;
+  color: #0056d2;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.exp-block ul {
   list-style-type: disc;
-  padding-left: 20px;
+  padding-left: 25px;
 }
 
-#experience li,
-#extracurricular li {
-  margin-bottom: 15px;
-  font-weight: 500;
+.exp-block ul li {
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #003d99;
+  font-size: 1.05rem;
 }
 
-/* Skills section */
-.skills-container {
+/* ======== Skills Section ======== */
+#skills .skills-container {
   display: flex;
-  flex-wrap: wrap;
   gap: 25px;
-  margin-top: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .skills-box {
-  flex: 1 1 45%;
-  background-color: #fefefe;
-  padding: 20px;
-  border: 1.5px solid #007BFF;
-  border-radius: 12px;
-  box-shadow: 0 3px 8px rgba(0, 123, 255, 0.15);
-}
-
-.skills-box h3 {
-  color: #004080;
-  margin-bottom: 12px;
-  font-weight: 700;
-  font-size: 1.3em;
-}
-
-.skills-box ul {
-  list-style-type: square;
-  padding-left: 22px;
-}
-
-.skills-box li {
-  margin-bottom: 10px;
-  font-weight: 500;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .skills-container {
-    flex-direction: column;
-  }
-
-  .skills-box {
-    flex: 1 1 100%;
-  }
-}
+  b
